@@ -7,9 +7,11 @@ import { useState } from "react";
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState("home");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
+    setMobileMenuOpen(false);
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
@@ -43,8 +45,40 @@ export default function Index() {
                 Контакты
               </button>
             </div>
+            <button 
+              className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-secondary" />
+            </button>
           </nav>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-border animate-fade-in">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <button onClick={() => scrollToSection("home")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                Главная
+              </button>
+              <button onClick={() => scrollToSection("about")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                О компании
+              </button>
+              <button onClick={() => scrollToSection("services")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                Услуги
+              </button>
+              <button onClick={() => scrollToSection("portfolio")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                Портфолио
+              </button>
+              <button onClick={() => scrollToSection("clients")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                Клиенты
+              </button>
+              <button onClick={() => scrollToSection("contacts")} className="text-left text-sm font-medium hover:text-primary transition-colors py-2">
+                Контакты
+              </button>
+            </div>
+          </div>
+        )}
       </header>
 
       <section id="home" className="pt-24 pb-20 bg-gradient-to-b from-secondary to-secondary/90">
