@@ -284,48 +284,44 @@ export default function Index() {
             Мы сотрудничаем с ведущими операторами сотовой связи "большой четверки"
           </p>
 
-          <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8 flex items-center justify-center h-32">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Icon name="Signal" size={32} className="text-primary" />
-                  </div>
-                  <p className="font-medium text-sm">Оператор 1</p>
-                </div>
+              <CardContent className="p-6 flex items-center justify-center h-40">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e19a2941-e76b-4369-baad-a482b14c736d/files/3bbc1a46-270a-4cea-a535-3379bd431e4c.jpg" 
+                  alt="МТС" 
+                  className="w-full h-full object-contain"
+                />
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8 flex items-center justify-center h-32">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Icon name="Wifi" size={32} className="text-primary" />
-                  </div>
-                  <p className="font-medium text-sm">Оператор 2</p>
-                </div>
+              <CardContent className="p-6 flex items-center justify-center h-40">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e19a2941-e76b-4369-baad-a482b14c736d/files/1038b854-c1a1-4dc4-aac2-c4eb4c6cc4f7.jpg" 
+                  alt="Билайн" 
+                  className="w-full h-full object-contain"
+                />
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8 flex items-center justify-center h-32">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Icon name="Antenna" size={32} className="text-primary" />
-                  </div>
-                  <p className="font-medium text-sm">Оператор 3</p>
-                </div>
+              <CardContent className="p-6 flex items-center justify-center h-40">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e19a2941-e76b-4369-baad-a482b14c736d/files/ad46f688-abb9-476a-815d-fdf755692fd7.jpg" 
+                  alt="МегаФон" 
+                  className="w-full h-full object-contain"
+                />
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8 flex items-center justify-center h-32">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Icon name="Radio" size={32} className="text-primary" />
-                  </div>
-                  <p className="font-medium text-sm">Оператор 4</p>
-                </div>
+              <CardContent className="p-6 flex items-center justify-center h-40">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e19a2941-e76b-4369-baad-a482b14c736d/files/b0d53b58-29f7-43dc-8906-f1bad331e252.jpg" 
+                  alt="Теле2" 
+                  className="w-full h-full object-contain"
+                />
               </CardContent>
             </Card>
           </div>
