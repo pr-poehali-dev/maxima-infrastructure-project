@@ -236,6 +236,89 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Почему выбирают нас</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Преимущества работы с Максима Групп для операторов связи
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="CheckCircle" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Надёжность</h3>
+                <p className="text-muted-foreground">
+                  15+ лет безупречной работы на рынке. Гарантированное время безотказной работы 99.9%
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Оперативность</h3>
+                <p className="text-muted-foreground">
+                  Круглосуточная техподдержка 24/7. Выезд специалистов в течение 2 часов
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Award" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Качество</h3>
+                <p className="text-muted-foreground">
+                  Все объекты сертифицированы и соответствуют международным стандартам качества
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Zap" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Современность</h3>
+                <p className="text-muted-foreground">
+                  Постоянная модернизация оборудования. Поддержка всех актуальных технологий связи
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="FileText" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Прозрачность</h3>
+                <p className="text-muted-foreground">
+                  Понятные договоры, подробная отчётность, никаких скрытых платежей
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Handshake" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Партнёрство</h3>
+                <p className="text-muted-foreground">
+                  Индивидуальный подход к каждому клиенту. Гибкие условия сотрудничества
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="portfolio" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Портфолио</h2>
